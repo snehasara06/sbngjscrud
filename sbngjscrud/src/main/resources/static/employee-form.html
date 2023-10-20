@@ -1,0 +1,37 @@
+<form ng-submit="saveEmployee(currentEmployee)">
+    <!-- Employee Name -->
+    <input type="text" ng-model="currentEmployee.name" placeholder="Employee Name"><br><br>
+
+    <!-- Email -->
+    <input type="email" ng-model="currentEmployee.email" placeholder="Email"><br><br>
+
+    <!-- Purpose -->
+    <input type="text" ng-model="currentEmployee.purpose" placeholder="Purpose"><br><br>
+
+    <!-- Role -->
+    <input type="text" ng-model="currentEmployee.role" placeholder="Role"><br><br>
+
+    <!-- Source -->
+    <input type="text" ng-model="currentEmployee.source" placeholder="Source"><br><br>
+
+    <!-- Assigned To -->
+    <input type="text" ng-model="currentEmployee.assigned_to" placeholder="Assigned To"><br><br>
+
+    <!-- Status -->
+    <input type="text" ng-model="currentEmployee.status" placeholder="Status"><br><br>
+
+    <!-- Score -->
+    <input type="number" ng-model="currentEmployee.score" step="0.01" placeholder="Score"><br><br>
+
+    <!-- Eligible for Interview -->
+    <input type="text" ng-model="currentEmployee.eligible_for_interview"
+        placeholder="Eligible for Interview"><br><br>
+
+    <!-- Referral -->
+    <input type="text" ng-model="currentEmployee.referral" placeholder="Referral"><br><br>
+
+    <!-- Process Status -->
+    <input type="text" ng-model="currentEmployee.process_status" placeholder="Process Status">
+
+    <button type="submit">{{ isEditMode ? 'Update' : 'Save' }} Employee</button>
+</form>
